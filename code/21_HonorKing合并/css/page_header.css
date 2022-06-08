@@ -2,7 +2,7 @@
   background-color: rgba(0, 0, 0, .8);
 }
 
-.header:hover .hide-wrapper{
+.header:hover .hide-wrapper {
   display: block;
 }
 
@@ -116,11 +116,13 @@
 .header .hide-wrapper {
   display: none;
   position: absolute;
-  top:125px;
-  left:0;
+  top: 125px;
+  left: 0;
   right: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, .8);
+
+  transition:all 10s linear;
 }
 
 .header .hide-wrapper .hide {
@@ -156,9 +158,10 @@
 .header .hide-wrapper .hide .item a .icon {
   display: inline-block;
   position: relative;
-  left:0px;
-  bottom:-8px;
+  left: 0px;
+  /* bottom:-8px; */
   width: 20px;
   height: 24px;
+  vertical-align: middle;
   background: url(../img/main_sprite.png) no-repeat -163px -68px;
 }

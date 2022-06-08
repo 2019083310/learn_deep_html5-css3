@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,21 +23,25 @@
       background-color: orange;
 
       /* 修改当前元素的形变的原点位置 */
-      /* transform-origin: center top; */
+      /* 可以通过transform-origin进行设置转转或者缩放的中心点 */
+      /* 可以是center/top/left/right  也可以是px 还可以是百分比 */
+      transform-origin: center top;
       /* transform-origin: 20px 20px; */
-      transform-origin: 10% 10%;
+      /* transform-origin: 10% 10%; */
     }
 
     .box:hover {
-      transform: rotate(45deg) scale(0.5);
+      transform: rotate(45deg);
     }
   </style>
 </head>
+
 <body>
-  
+
   <div class="container">
     <div class="box"></div>
   </div>
 
 </body>
+
 </html>
